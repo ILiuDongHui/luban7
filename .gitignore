@@ -1,0 +1,16 @@
+**/coverage
+/packages/*/lib
+/packages/**/fixtures/**/dist
+**/node_modules
+**/yarn.lock
+**/package-lock.json
+**/dist
+**/.docz
+.changelog
+.umi
+.umi-test
+.umi-production
+.DS_Store
+**/.vscode
+**/npm-debug.log*
+**/yarn-error.log
