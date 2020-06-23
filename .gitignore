@@ -12,5 +12,4 @@
 .umi-production
 .DS_Store
 **/.vscode
-**/npm-debug.log*
-**/yarn-error.log
+**/*.log

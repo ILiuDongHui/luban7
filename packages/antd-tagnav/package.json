@@ -1,6 +1,6 @@
 {
   "name": "@luban7/antd-tagnav",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component for navigation using Tag component of Ant Design.",
   "license": "MIT",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
     "name": "aiodiage",
     "email": "3135366144@qq.com"
   },
-  "repository": "https://github.com/ILiuDongHui/luban7/packages/antd-tagnav",
+  "repository": "https://github.com/ILiuDongHui/luban7/tree/develop/packages/antd-tagnav",
   "scripts": {
     "dev": "father doc dev",
     "build": "father build"
