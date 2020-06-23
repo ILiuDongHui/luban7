@@ -1,0 +1,50 @@
+---
+name: Provider
+route: /provider
+order: 4
+sidebar: true
+menu: COMPONENTS
+---
+
+# Provider
+
+## Props
+```
+{
+  defaultTags?: TagNavItemData[];
+  defaultActiveTag?: TagNavItemData;
+}
+```
+
+## Usage
+
+```
+import { Layout } from 'antd';
+
+const { Sider, Header, Content } = Layout;
+
+export default function AppLayout(props) {
+  const defaultTags = [
+    {
+      path: '/home',
+      title: 'Home',
+      pin: true,
+      closable: false,
+    }
+  ];
+  return (
+    <Layout>
+      <Sider />
+      <Layout>
+        <Header />
+        <Provider defaultTags={defaultTags}>
+          <TagNav />
+          <Content>
+            {props.children}
+          </Content>
+        </Provider>
+      </Layout>
+    </Layout>
+  )
+}
+```

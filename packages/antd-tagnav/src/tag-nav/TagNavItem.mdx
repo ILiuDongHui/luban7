@@ -1,0 +1,74 @@
+---
+name: TagNavItem
+route: /tag-nav-item
+order: 5
+sidebar: true
+menu: COMPONENTS
+---
+
+# TagNavItem
+
+## Props
+```
+interface TagNavItemProps extends Omit<TagNavItemData, 'path'> {}
+
+/*
+ * title: React.ReactNode;
+ * closable?: boolean;
+ * pin?: boolean;
+ * dragable?: boolean;
+ * onHide?: () => void;
+ * onShow?: () => void;
+ * beforeClose?: (tag: TagNavItemData) => void;
+ * afterClose?: (tag: TagNavItemData) => void;
+ */
+```
+
+## Usage
+
+### Use TagNavItem Component
+```
+export default function HomePage() {
+  return (
+    <TagNavItem title="Home" pin closable={false}>
+      <div>
+        <h1>Home Page</h1>
+      </div>
+    </TagNavItem>
+  );
+}
+```
+
+
+### Use React HOOK `useTagNavItem(props)`
+```
+export default function HomePage() {
+  useTagNavItem({
+    title: 'Home',
+    pin: true,
+    closable: false,
+  });
+  return (
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  );
+}
+```
+
+### Use React HOC `withTagNavItem(props)(Component)`
+```
+function HomePage() {
+  return (
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  );
+}
+
+export default withTagNavItem({
+  title: 'Home',
+  pin: true,
+  closable: false,
+})(HomePage);
+```
